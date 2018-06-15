@@ -11,7 +11,8 @@ RUN apk add --update \
     nginx \
   && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py \
   && pip install virtualenv enum et-xmlfile jdcal openpyxl psycopg2 psycopg2-binary XlsxWriter \
-  && rm -rf /var/cache/apk/*
+  && rm -rf /var/cache/apk/* \
+  && mkdir -p /run/nginx
 
 COPY supervisor/supervisord.conf /etc/supervisord.conf
 COPY bin/* /usr/local/bin/

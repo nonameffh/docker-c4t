@@ -10,7 +10,9 @@ RUN apk add --update \
     build-base \
     nginx \
   && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py \
-  && pip install virtualenv enum et-xmlfile jdcal openpyxl psycopg2 psycopg2-binary XlsxWriter \
+  && pip install enum et-xmlfile jdcal openpyxl psycopg2 psycopg2-binary XlsxWriter \
+  && pip3 install --upgrade pip \
+  && pip3 install et-xmlfile jdcal openpyxl psycopg2 psycopg2-binary XlsxWriter \
   && rm -rf /var/cache/apk/* \
   && mkdir -p /run/nginx
 

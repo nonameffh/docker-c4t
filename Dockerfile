@@ -1,4 +1,4 @@
-FROM nonameffh/php71:latest
+FROM nonameffh/php71:dev
 
 MAINTAINER Aleksey Tarasov <nonameffh@gmail.com>
 

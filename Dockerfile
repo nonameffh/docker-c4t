@@ -1,6 +1,6 @@
 FROM nonameffh/php71:latest
 
-MAINTAINER Aleksey Tarasov <nonameffh@gmail.com>
+LABEL maintainer="Aleksey Tarasov <nonameffh@gmail.com>"
 
 ## add python
 RUN apk add --update \

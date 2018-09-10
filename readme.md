@@ -1,3 +1,1 @@
-# PHP 7.1 (with FPM) docker build
-
-
+# Custom project image build
